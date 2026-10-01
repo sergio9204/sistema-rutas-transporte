@@ -183,3 +183,31 @@ Actividad grupal (equipo de máximo 4 estudiantes).
 ## 9. Referencia
 
 Benítez, R. (2014). *Inteligencia artificial avanzada*. Barcelona: Editorial UOC.
+
+Referencia Bibliográfica Adicional
+* Palma Méndez, J. T. (2008). *Inteligencia artificial: métodos, técnicas y aplicaciones*. Madrid: McGraw-Hill España.
+
+---
+##  10. Componente de Aprendizaje Supervisado (Machine Learning)
+*Basado en los lineamientos teóricos del Capítulo 17 (Aprendizaje de árboles y reglas de decisión) de Palma Méndez, J. T. (2008).*
+
+Para complementar el sistema basado en conocimiento, implementamos un modelo predictivo capaz de anticipar contingencias operativas (retrasos severos) en la red de transporte masivo mediante un clasificador de Árbol de Decisión.
+
+###  Ficha Técnica del Dataset (`datos_transporte.csv`)
+* **Volumen de la muestra:** 1,000 registros históricos simulados de estrés operativo.
+* **Tipo de Aprendizaje:** Clasificación Binaria Supervisada.
+* **Criterio de División de Nodos:** Entropía (Ganancia de Información).
+
+### 🔍 Diccionario de Variables Predictivas (Características)
+1. **Hora_Pico (Binaria):** Indica si el trayecto coincide con ventanas de alta congestión (1 = Sí, 0 = No).
+2. **Dia_Semana (Entera):** Representa el día del viaje indexado numéricamente (0 = Lunes, 6 = Domingo).
+3. **Clima_Lluvia (Binaria):** Factores ambientales que reducen la velocidad comercial de los articulados (1 = Lluvia, 0 = Despejado).
+4. **Bloqueo_Via (Binaria):** Eventos imprevistos de fuerza mayor como accidentes o manifestaciones (1 = Bloqueo, 0 = Flujo normal).
+5. **Ocupacion_Estacion (Categórica):** Densidad de pasajeros en plataformas de abordaje (0 = Baja, 1 = Media, 2 = Alta).
+
+###  Variable Objetivo (Target a predecir)
+* **Retraso_Alto (Binaria):** Clasificación del estado del itinerario (1 = Retraso severo reportado en ruta, 0 = Operación a tiempo).
+
+###  Instrucciones para Ejecutar las Pruebas del Modelo
+1. Instale las dependencias necesarias en su entorno de Python:
+   python modelo_superEl sistema entrenará el árbol, mostrará las métricas de exactitud y desplegará un menú interactivo en la consola para ingresar datos de prueba en vivo.
