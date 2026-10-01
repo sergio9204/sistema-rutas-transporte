@@ -208,6 +208,16 @@ Para complementar el sistema basado en conocimiento, implementamos un modelo pre
 ###  Variable Objetivo (Target a predecir)
 * **Retraso_Alto (Binaria):** Clasificación del estado del itinerario (1 = Retraso severo reportado en ruta, 0 = Operación a tiempo).
 
-###  Instrucciones para Ejecutar las Pruebas del Modelo
+### 🧪 Instrucciones para Ejecutar las Pruebas del Modelo
 1. Instale las dependencias necesarias en su entorno de Python:
-   python modelo_superEl sistema entrenará el árbol, mostrará las métricas de exactitud y desplegará un menú interactivo en la consola para ingresar datos de prueba en vivo.
+   ```bash
+   pip install pandas numpy scikit-learn
+   ```
+2. Ejecute el script del clasificador supervisado desde la terminal de comandos:
+   ```bash
+   python modelo_supervisado.py
+   ```
+3. El sistema entrenará el árbol, mostrará las métricas de exactitud y desplegará un menú interactivo en la consola para ingresar datos de prueba en vivo.
+
+### 📚 Referencia Bibliográfica Adicional
+* Palma Méndez, J. T. (2008). *Inteligencia artificial: métodos, técnicas y aplicaciones*. Madrid: McGraw-Hill España.
