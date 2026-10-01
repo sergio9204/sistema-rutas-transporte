@@ -174,13 +174,9 @@ la mejor ruta.
 
 Actividad grupal (equipo de máximo 4 estudiantes).
 
-- Nombre 1
-- Nombre 2
-- Nombre 3
-- Nombre 4
-
-**Video explicativo:** <pegar aquí el enlace del video>
-**Repositorio:** <pegar aquí el enlace del repositorio Git>
+- Sergio Armando Ladino Ocampo
+- Juan David Fernandez Farfan
+- Luisa Veronica Cruz Velandia 
 
 ---
 
