@@ -198,7 +198,7 @@ Para complementar el sistema basado en conocimiento, implementamos un modelo pre
 * **Tipo de Aprendizaje:** Clasificación Binaria Supervisada.
 * **Criterio de División de Nodos:** Entropía (Ganancia de Información).
 
-### 🔍 Diccionario de Variables Predictivas (Características)
+###  Diccionario de Variables Predictivas (Características)
 1. **Hora_Pico (Binaria):** Indica si el trayecto coincide con ventanas de alta congestión (1 = Sí, 0 = No).
 2. **Dia_Semana (Entera):** Representa el día del viaje indexado numéricamente (0 = Lunes, 6 = Domingo).
 3. **Clima_Lluvia (Binaria):** Factores ambientales que reducen la velocidad comercial de los articulados (1 = Lluvia, 0 = Despejado).
@@ -208,7 +208,7 @@ Para complementar el sistema basado en conocimiento, implementamos un modelo pre
 ###  Variable Objetivo (Target a predecir)
 * **Retraso_Alto (Binaria):** Clasificación del estado del itinerario (1 = Retraso severo reportado en ruta, 0 = Operación a tiempo).
 
-### 🧪 Instrucciones para Ejecutar las Pruebas del Modelo
+###  Instrucciones para Ejecutar las Pruebas del Modelo
 1. Instale las dependencias necesarias en su entorno de Python:
    ```bash
    pip install pandas numpy scikit-learn
@@ -217,7 +217,6 @@ Para complementar el sistema basado en conocimiento, implementamos un modelo pre
    ```bash
    python modelo_supervisado.py
    ```
-3. El sistema entrenará el árbol, mostrará las métricas de exactitud y desplegará un menú interactivo en la consola para ingresar datos de prueba en vivo.
+3. El sistema entrenará el árbol, mostrará las métricas de exactitud y desplegará un menú interactivo en la consola para ingresar datos de prueba en vivo
 
-### 📚 Referencia Bibliográfica Adicional
-* Palma Méndez, J. T. (2008). *Inteligencia artificial: métodos, técnicas y aplicaciones*. Madrid: McGraw-Hill España.
+
