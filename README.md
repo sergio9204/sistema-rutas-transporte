@@ -81,6 +81,8 @@ sistema-rutas-transporte/
 ├── motor_inferencia.py    # Motor de reglas + algoritmo A* (cap. 3 y 9)
 ├── main.py                # Programa principal (interfaz por consola)
 ├── pruebas.py             # Verificación: A* == óptimo (Dijkstra)
+├── datos_trasnporte.csv   # Dataset 
+├── modelo_supervisado.py # Arboles y Reglas de Decision
 └── README.md
 ```
 
