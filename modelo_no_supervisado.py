@@ -89,3 +89,5 @@ if __name__ == "__main__":
         print("-"*40)
     except ValueError:
         print("[Error] Ingrese valores numéricos válidos en la consola.")
+
+        input("\n[Pausa del Sistema] Presione ENTER para salir...")
