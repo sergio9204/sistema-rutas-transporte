@@ -90,4 +90,6 @@ if __name__ == "__main__":
     except ValueError:
         print("[Error] Ingrese valores numéricos válidos en la consola.")
 
-        input("\n[Pausa del Sistema] Presione ENTER para salir...")
+    import sys
+    sys.stdout.flush() # Vacía el búfer de salida de Windows
+    input(" Presione la tecla ENTER para cerrar esta ventana...")
