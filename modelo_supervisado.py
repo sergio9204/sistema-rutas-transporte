@@ -118,3 +118,7 @@ if __name__ == "__main__":
         print("-"*40)
     except ValueError:
         print("[Error] Ingrese solo valores numéricos válidos configurados en el sistema.")
+    input("\n[Pausa del Sistema] Presione ENTER para salir...")
+
+    import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
