@@ -221,4 +221,22 @@ Para complementar el sistema basado en conocimiento, implementamos un modelo pre
    ```
 3. El sistema entrenará el árbol, mostrará las métricas de exactitud y desplegará un menú interactivo en la consola para ingresar datos de prueba en vivo
 
+*Basado en los lineamientos del Capítulo 16 (Técnicas de agrupamiento) de Palma Méndez, J. T. (2008).*
+
+Como complemento avanzado, se desarrolló un módulo de aprendizaje no supervisado utilizando el algoritmo K-Means. A diferencia del modelo supervisado, este componente procesa flujos de datos sin etiquetas previas, descubriendo agrupaciones naturales para segmentar el nivel de congestión de la red en tiempo real.
+
+### 📝 Ficha Técnica del Dataset (`datos_agrupamiento.csv`)
+* **Volumen de la muestra:** 500 muestras operacionales continuas.
+* **Métrica de proximidad:** Distancia Euclidiana sobre características normalizadas (`StandardScaler`).
+* **Número de grupos (k):** 3 clústeres autonómicos (Tráfico Fluido, Moderado y Crítico).
+
+### 🔍 Atributos del Dominio Procesados
+1. **Tiempo_Viaje_Min:** Duración en minutos registrada por los vehículos en un tramo.
+2. **Flujo_Pasajeros_Min:** Tasa de entrada de usuarios en las zonas de abordaje.
+
+### 🧪 Instrucciones de Ejecución
+Ejecute el script del clasificador no supervisado desde la terminal:
+```bash
+python modelo_no_supervisado.py
+```
 
